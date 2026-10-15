@@ -1,0 +1,129 @@
+:root {
+    --asosiy-body-orqa-rangi: #202C36;
+    --asosiy-text-rangi: #FFFFFF;
+    --asosiy-header-orqa-rangi: #2B3844;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--asosiy-body-orqa-rangi);
+}
+
+.header {
+    padding: 24px 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--asosiy-header-orqa-rangi);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__btn {
+    background-color: transparent;
+    color: var(--asosiy-text-rangi);
+    border: none;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .header__btn {
+        font-size: 12px;
+    }
+}
+
+.hero {
+    padding: 48px 0;
+}
+
+.boxhero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0 20px 32px;
+    border-radius: 5px;
+    max-width: 480px;
+    width: 100%;
+    border: 1px solid #000000;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.2);
+    background-color: var(--asosiy-header-orqa-rangi);
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--asosiy-text-rangi);
+    width: 100%;
+}
+
+.mainbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+    gap: 40px;
+}
+
+.boxflag {
+    max-width: 264px;
+    background-color: var(--asosiy-header-orqa-rangi);
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    padding-bottom: 24px;
+}
+
+.boxflag img {
+    width: 100%;
+    height: 160px; 
+}
+
+.boxflag__content {
+    padding: 16px 24px 0 24px;
+}
+
+.hero__h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--asosiy-text-rangi);
+}
